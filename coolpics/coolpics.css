@@ -37,8 +37,8 @@ a {
 img {
     max-width: 100%;
     height: 250px;
-    width: 250px;
-    object-fit: cover;
+    /* width: 250px; */
+    object-fit: contain;
 }
 
 #menu-btn {
@@ -58,14 +58,69 @@ nav ul li {
     margin: 5px 0;
 }
 
+.hide {
+    display: none;
+}
+
+/* modal viewer CSS here */
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template-rows: auto auto;
+    z-index: 10;
+    justify-items: center; 
+    align-content: center;
+    padding: 2.5rem;
+}
+
+.viewer img {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+.close-viewer {
+    justify-self: end;
+    border: none;
+    color: var(--text-light);
+    background: none;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 700px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    nav ul {
-        display: none;
+    .viewer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.75);
+        display: grid;
+        place-items: center;
+        z-index: 10;
     }
+    
+    .viewer img {
+        max-height: 100%;
+    }
+
+    /* nav ul {
+        display: none;
+    } */
 }
 
 @media screen and (min-width: 1000px) {
@@ -73,9 +128,9 @@ nav ul li {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    #menu-btn {
+    /* #menu-btn {
         display: none;
-    }
+    } */
 
     nav ul {
         display: flex;
@@ -85,5 +140,23 @@ nav ul li {
 
     nav ul li {
         display: inline;
+    }
+
+    .viewer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.75);
+        display: grid;
+        place-items: center;
+        z-index: 10;
+        margin: 3rem;
+
+    }
+    
+    .viewer img {
+        max-height: 100%;
     }
 }
