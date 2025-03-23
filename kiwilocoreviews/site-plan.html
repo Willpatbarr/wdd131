@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="styles/site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Kiwi Loco Reviews Site Plan</h1>
+			<h2>[Your Name]</h2>
+			<h2>WDD 131-[Your Section]</h2>
+		</header>
+		<main>
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>The purpose of this site is to provide a one-stop shop for people to leave reviews and suggestions for Kiwi Loco.</p>
+
+			<h3>Audience</h3>
+			<p>The audience will be customers of Kiwi Loco, as well as a page dedicated to showing other stats.</p>
+
+			<h3>Dynamic elements</h3>
+			<p>
+				A form with three dropdowns will dynamically present tailored review forms depending on the selection. Required fields will change based on the type of review.
+				Results will be displayed on an admin-only page. A basic login system may be implemented to access this page. A dark mode toggle may also be added.
+			</p>
+
+			<hr />
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<img src="images/kiwi_logo.png" alt="Kiwi Loco Logo" />
+			<hr />
+			<h2>Style Guide</h2>
+
+			<h3>Color Palette</h3>
+			Palette URL:
+			<a href="https://coolors.co/b2bc36-f7879a-000000-ffffff" target="_blank">
+				https://coolors.co/b2bc36-f7879a-000000-ffffff
+			</a>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+					</tr>
+					<tr>
+						<td class="primary">#B2BC36</td>
+						<td class="secondary">#F7879A</td>
+						<td class="accent1">#000000</td>
+						<td class="accent2">#FFFFFF</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Typography</h3>
+			<h4>Heading Font: Verdana</h4>
+			<h4>Paragraph Font: Verdana</h4>
+
+			<h3>Normal paragraph example</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+			<h3>Colored paragraph example</h3>
+			<p class="colored">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+
+			<h3>Navigation</h3>
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">Leave a Review</a>
+				<a href="#">[Admin Page]</a>
+			</nav>
+			<hr />
+
+			<h2>Content</h2>
+			<h3>Home page</h3>
+			<p>
+				OPEN Mon–Sat 11 a.m.–Midnight, Closed Sundays
+				<br /><br />
+				<strong>Daily Deals:</strong><br />
+				Monday: FHE night get 25% off if you come with your group<br />
+				Tuesday: 6-8 BOGO<br />
+				Wednesday: Do our workout of the day to save money on your froyo!<br />
+				Thursday: Thirsty Thursday, save $1 on all drink purchases
+				<p> featured flavors:</p>
+				<p>(three flavors and their cards will populate at the bottom of the home page with a link to see the rest of the flavors)</p>
+			</p>
+
+			<h3>Flavors</h3>
+			<p>
+				Each flavor section will include: Image, Name, Pairings, Toppings<br />
+				Example:<br />
+				<img src="images/alpine-vanilla.jpg" alt="alpine vanilla">
+				<strong>Alpine Vanilla</strong><br />
+				Pair with: Chocolate or Tropical Banana<br />
+				Toppings: Butterfinger, Strawberries<br />
+			</p>
+
+			<h3>Review Page</h3>
+<p>
+	This page contains three dropdown options that display different forms depending on the user's selection:
+</p>
+<ul>
+	<li><strong>Review the Froyo</strong></li>
+	<li><strong>Review the Customer Service</strong></li>
+	<li><strong>Leave a Suggestion</strong></li>
+</ul>
+
+<h4>Review the Froyo</h4>
+<p>
+	Questions:
+	<ul>
+		<li>How many flavors did you get? (required) — This determines how many times the following two questions are repeated.</li>
+		<li>What flavor did you get? (required) — Dropdown menu</li>
+		<li>How would you rate that flavor? (required)</li>
+		<li>How many toppings did you get? (required) — Works the same way as flavors</li>
+		<li>How would you rate that topping? (required)</li>
+	</ul>
+</p>
+
+<h4>Review the Customer Service</h4>
+<p>
+	Questions:
+	<ul>
+		<li>What time did you come to our store? (required) — Time picker</li>
+		<li>On a scale of 1-10 how friendly were the employees? (required)</li>
+		<li>On a scale of 1-10 how helpful were the employees? (required)</li>
+		<li>On a scale of 1-10 how likely are you to come back to Kiwi Loco? (required)</li>
+		<li>Any other comments? — Text field</li>
+	</ul>
+</p>
+
+<h4>Leave a Suggestion</h4>
+<p>
+	Questions:
+	<ul>
+		<li>Suggest a flavor — Text field</li>
+		<li>Suggest a topping — Text field</li>
+	</ul>
+</p>
+
+
+			<h3>Admin Page</h3>
+			<p>This page will display submitted reviews and suggestions. A login system may be used for access. (Stretch goal)</p>
+
+			<h2>Wireframes</h2>
+			<h3>Home</h3>
+			<img src="images/main-page-wireframe.png" alt="home page wireframe" class="wireframe"/>
+
+			<h3>Flavors</h3>
+			<img src="images/flavor-page-wireframe.png" alt="home page wireframe" class="wireframe"/>
+
+			<h3>Flavors</h3>
+			<img src="images/review-page-wireframe.png" alt="home page wireframe" class="wireframe"/>
+		</main>
+	</body>
+</html>
