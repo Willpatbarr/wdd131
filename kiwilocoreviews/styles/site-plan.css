@@ -16,9 +16,9 @@
   --headline-color-on-color: white;
   --paragraph-color-on-white: var(--primary-color);
   --paragraph-color-on-color: white;
-  --paragraph-background-color: var(--primary-color);
+  --paragraph-background-color: var(--secondary-color);
   --nav-link-color: black; 
-  --nav-background-color: var(--secondary-color);
+  --nav-background-color: var(--primary-color);
   --nav-hover-link-color: white;
   --nav-hover-background-color: var(--primary-color);
 }
