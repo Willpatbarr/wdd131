@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
         formContainer.innerHTML = '';
     }
 
+    function thankTheReviewer() {
+        formContainer.innerHTML = `
+        <h3>Thankyou! Your feedback has been submitted!</h3>`
+    }
+
     function showFroyoForm() {
         clearForm();
         formContainer.innerHTML = `
@@ -112,4 +117,13 @@ document.addEventListener("DOMContentLoaded", () => {
             </form>
         `;
     }
+
+    document.addEventListener('submit', (e) => {
+        e.preventDefault(); // Stop page from reloading
+    
+        // Clear the form content and thank the reviewer
+        thankTheReviewer();
+    });
+    
 });
+

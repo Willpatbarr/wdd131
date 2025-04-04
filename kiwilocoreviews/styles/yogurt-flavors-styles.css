@@ -14,7 +14,7 @@
   
     /* updated: nav text color is now white */
     --headline-color-on-white: var(--primary-color);
-    --headline-color-on-color: white;
+    --headline-color-on-color: black;
     --title-bars: var(--primary-color);
     --paragraph-color-on-white: var(--primary-color);
     --paragraph-color-on-color: white;
@@ -25,7 +25,7 @@
     --nav-hover-background-color: var(--primary-color);
 
     --footer-color: var(--secondary-color);
-    --footer-text-color: white;
+    --footer-text-color: black;
 
     --grid-gap: 2.5rem;
   }
@@ -150,6 +150,8 @@ main h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--grid-gap);
+    min-height: 1000px; /* Adjust as necessary based on the expected content height */
+
 }
 
 .flavor-card {
@@ -159,12 +161,14 @@ main h2 {
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    min-height: 400px;
 }
 
 .flavor-card img {
-    height: 200px;
-    display: block;
-    margin: 0 auto;
+    width: 80%;         
+    height: auto;        
+    aspect-ratio: 4 / 3; 
+    object-fit: cover; 
 }
 
 .flavor-card h3 {

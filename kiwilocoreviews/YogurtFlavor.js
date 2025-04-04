@@ -32,7 +32,7 @@ class YogurtFlavor {
 const allFlavors = [
     new YogurtFlavor("Alpine Vanilla", true, true, "Chocolate", "Tropical Banana", "Butterfinger", "Strawberries", "images/alpine-vanilla.jpg"),
     new YogurtFlavor("NSA Chocolate", true, false, "Vanilla", "Horchata", "Reese’s", "Brownie Bites", "images/NSA-chocolate.jpg"),
-    new YogurtFlavor("Pomegranate Raspberry", true, false, "Pineapple Dole", "Tiger’s Blood", "Mango", "Strawberries", "images/pomegranate-raspberry.png"),
+    new YogurtFlavor("Pomegranate Raspberry", true, false, "Pineapple Dole", "Tiger’s Blood", "Mango", "Strawberries", "images/pomegranate-raspberry.jpg"),
     new YogurtFlavor("Samoa Cookie", true, false, "Chocolate Strawberry", "Birthday Cake", "Heath", "Butterfinger", "images/LBB_samoa.jpg"),
     new YogurtFlavor("Horchata", true, false, "Vanilla", "Chocolate", "Cinnamon Toast Crunch", "Reese’s", "images/horchata.jpeg"),
     new YogurtFlavor("Tiger’s Blood", true, true, "Cotton Candy", "Tropical Banana", "Coconut Shreds", "Strawberries", "images/tigers-blood.jpeg"),

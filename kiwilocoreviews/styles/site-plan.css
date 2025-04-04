@@ -2,7 +2,7 @@
 
 :root {
   /* your custom color palette */
-  --primary-color: #b2bc36;
+  --primary-color: #9abc36;
   --secondary-color: #f7879a;
   --accent1-color: #000000;
   --accent2-color: #ffffff;
@@ -13,14 +13,20 @@
 
   /* updated: nav text color is now white */
   --headline-color-on-white: var(--primary-color);
-  --headline-color-on-color: white;
+  --headline-color-on-color: black;
+  --title-bars: var(--primary-color);
   --paragraph-color-on-white: var(--primary-color);
   --paragraph-color-on-color: white;
-  --paragraph-background-color: var(--secondary-color);
+  --paragraph-background-color: var(--primary-color);
   --nav-link-color: black; 
-  --nav-background-color: var(--primary-color);
+  --nav-background-color: var(--secondary-color);
   --nav-hover-link-color: white;
   --nav-hover-background-color: var(--primary-color);
+
+  --footer-color: var(--secondary-color);
+  --footer-text-color: black;
+
+  --grid-gap: 2.5rem;
 }
 
 

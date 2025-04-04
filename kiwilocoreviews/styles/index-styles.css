@@ -14,7 +14,7 @@
   
     /* updated: nav text color is now white */
     --headline-color-on-white: var(--primary-color);
-    --headline-color-on-color: white;
+    --headline-color-on-color: black;
     --title-bars: var(--primary-color);
     --paragraph-color-on-white: var(--primary-color);
     --paragraph-color-on-color: white;
@@ -25,7 +25,7 @@
     --nav-hover-background-color: var(--primary-color);
 
     --footer-color: var(--secondary-color);
-    --footer-text-color: white;
+    --footer-text-color: black;
 
     --grid-gap: 2.5rem;
   }
