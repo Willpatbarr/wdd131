@@ -1,0 +1,90 @@
+/* GENERAL LAYOUT FIXES */
+body {
+    padding: 0 1rem;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* NAVIGATION: Stack vertically on mobile */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* FLAVOR CARDS: Stack in 1 column */
+  #featured-flavors {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .flavor-card {
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* INFO BOARD SECTIONS: stack them */
+  #info-board {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* HEADINGS */
+  h2, h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 2rem;
+  }
+  
+  /* MEDIA QUERY FOR LARGER SCREENS (optional cleanup) */
+  @media (min-width: 768px) {
+    nav ul {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    #featured-flavors {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .flavor-card {
+      flex: 0 1 calc(30% - 1rem);
+    }
+  
+    #info-board {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
