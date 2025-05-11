@@ -1,16 +1,23 @@
 /* styling for the index.html or homepage */
 
 @import url("https://fonts.googleapis.com/css?family=Verdana");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 :root {
     /* your custom color palette */
     --primary-color: #9abc36;
     --secondary-color: #f7879a;
     --accent1-color: #000000;
     --accent2-color: #ffffff;
+    --background-color: #FAFCEE;
+    /* --background-color: white; */
+    --test-background-color: #F5F5F5;
+    --section-background-color: white;
   
     /* fonts */
-    --heading-font: Verdana, sans-serif;
-    --paragraph-font: Verdana, sans-serif;
+    --heading-font: 'Poppins', sans-serif;
+    --paragraph-font: 'Josefin Sans', sans-serif;
   
     /* updated: nav text color is now white */
     --headline-color-on-white: var(--primary-color);
@@ -34,8 +41,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Verdana', Arial, sans-serif;
-    background-color: white;
+    font-family: var(--paragraph-font), Arial, sans-serif;
+    background-color: var(--background-color);
     color: #000000;
     overflow-y: scroll; /* Enables vertical scrolling */
 }
@@ -77,6 +84,8 @@ header {
     
 }
 
+
+
 #logo {
     display: block;
     margin: 0 auto;
@@ -84,8 +93,10 @@ header {
     max-width: 35%;
 }
 
+
+
 nav {
-    background-color: var(--nav-background-color);
+    background-color: var(--primary-color);
     display: grid;
     grid-template-columns: 1.5fr 3fr;
     
@@ -107,7 +118,7 @@ nav ul li {
 
 nav ul li a {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2cqh;
     padding: 0 1rem 0 1rem;
     justify-self: center;
 }
@@ -128,6 +139,39 @@ main {
     width: 70%;
 }
 
+
+/* hero section */
+#hero-section {
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+#hero-section h1 {
+    font-family: var(--heading-font);
+    font-size: 4rem; /* or larger if needed */
+    margin-bottom: 0.5rem;
+}
+#hero-section p {
+    font-family: 'Josefin Sans';
+    font-size: 2rem;
+    margin-top: 0;
+}
+#hero-rotator {
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--background-color);
+  }
+  
+  #hero-image {
+    width: 80%;
+    /* height: 100%; */
+    object-fit: cover;
+  }
+
+
+/* more general styles */
 main h3 {
     color: var(--headline-color-on-color);
     background-color: var(--title-bars);
@@ -140,6 +184,8 @@ main li {
     padding: 0.5rem;
 }
 
+
+/* info board section */
 #info-board {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -154,11 +200,14 @@ main li {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     overflow: hidden;
+    background-color: var(--section-background-color);
 }
 
 .info-section {
     margin: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    width: 50%;
+    
 }
 
 main h2 {
@@ -167,6 +216,150 @@ main h2 {
     justify-self: center;
 }
 
+.info-columns {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .info-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .hours-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px 40px;
+    margin-top: 1rem;
+  }
+  
+  .hours-grid div {
+    display: contents;
+  }
+  
+  dt {
+    font-weight: 500;
+    text-align: right;
+  }
+  
+  dd {
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  .deals-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 1px solid #444;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #333;
+    transition: background-color 0.2s;
+  }
+  
+  .deals-button:hover {
+    background-color: #eee;
+  }
+  
+
+/* hours */
+.hours-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 8px 40px;
+    margin-top: 1rem;
+  }
+  
+  .hours-grid div {
+    display: contents;
+  }
+  
+  dt {
+    font-weight: 500;
+    text-align: right;
+  }
+  
+  dd {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  /* daily deals specific */
+  .deal-highlight {
+    border: 1px solid #444;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .deal-highlight h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .deal-highlight p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+  
+  .deal-highlight hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid #444;
+  }
+  
+  .deals-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 1px solid #444;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #333;
+    transition: background-color 0.2s;
+  }
+  
+  .deals-button:hover {
+    background-color: #eee;
+  }
+  
+
+/* stuff dealing with the js of the hours and daily deal */
+#daily-deal {
+    font-size: 2.5rem;
+}
+
+#store-status {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.open-status {
+    color: green;
+    font-weight: bold;
+}
+
+.closed-status {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* featured flavor cards */
 #featured-flavors {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -174,7 +367,7 @@ main h2 {
 }
 
 .flavor-card {
-    /* background-color: var(--paragraph-background-color); */
+    background-color: white;
     justify-content: center;
     align-items: center;
     padding: 1rem;
