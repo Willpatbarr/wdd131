@@ -178,6 +178,13 @@ main {
     object-fit: cover;
   }
 
+  hr {
+    margin: 0 auto;
+    border: none;
+    border-top: 2px solid #828282; /* style it */
+    width: 60%;
+  }
+
 
 /* more general styles */
 main h3 {

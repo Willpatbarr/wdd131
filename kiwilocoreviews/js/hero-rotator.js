@@ -1,7 +1,10 @@
 const heroImages = [
     "images/hero1.png",
+    "images/hero4.png",
     "images/hero2.png",
-    "images/hero3.png"
+    "images/hero5.png",
+    "images/hero3.png",
+    "images/hero6.png"
   ];
   
   let currentImageIndex = 0;
